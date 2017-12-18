@@ -4,3 +4,4 @@ FROM nginx:alpine
 #COPY proxy.conf /etc/nginx/conf.d/
 
 COPY index.html /usr/share/nginx/html
+COPY networking-538.png /usr/share/nginx/html
