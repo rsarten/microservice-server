@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
     nginx-proxy:
@@ -6,4 +6,7 @@ services:
         restart: always
         ports:
         - "80:80"
+    flask-test:
+        build: flask-test
+        restart: always
 
