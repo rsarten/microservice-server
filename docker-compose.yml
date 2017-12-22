@@ -6,6 +6,11 @@ services:
         restart: always
         ports:
         - "80:80"
+    nginx-static:
+        build: nginx-static
+        restart: always
+        ports:
+        - "5001:80"
     flask-test:
         build: flask-test
         restart: always
