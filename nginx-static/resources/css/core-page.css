@@ -37,6 +37,7 @@ nav {
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
+    max-width: 85%;
 }
 div.banner {
   width: 70%;
