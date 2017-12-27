@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="resources/css/core-page.css">
+  <script language="JavaScript" src="resources/scripts/body.js" defer></script>
 </head>
 
 <body>
@@ -21,19 +22,19 @@
 </header>
 
 <nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">New</a></li>
-    <li><a href="#">Old</a></li>
-  </ul>
+  <div class="nav-button-group">
+    <button class="nav-button">Home</button>
+    <button class="nav-button" id="news-button" onclick="getNews()">News</button>
+    <button class="nav-button">Second</button>
+  </div>
 </nav>
 
-<article>
+<div class="main-body-container" id="main-body">
   <p>This server currently hosts several small static pages built for whimsical puposes and
 	  in order to practice and test implementation. It also hosts some simple web-scraping scripts and RESTful APIs to access data.
 	  Direction to these projects will become available once the server configuration finally settles down.</p>
-  <p>Thank you for visiting!</p>
-</article>
+  <p onclick="myFunction(this, 'red')">Thank you for visiting!</p>
+</div>
 
 <footer>Copyright &copy; Rory Sarten</footer>
 

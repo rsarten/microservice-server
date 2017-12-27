@@ -19,16 +19,20 @@ nav {
     padding: 1em;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.nav-button-group {
+    padding: 0px 0px;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
 }
 
-nav ul a {
-    text-decoration: none;
+.nav-button {
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+    cursor: pointer;
 }
 
-article {
+.main-body-container {
     margin-left: 10%;
     border-left: 1px solid gray;
     padding: 1em;
