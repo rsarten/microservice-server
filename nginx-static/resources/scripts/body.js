@@ -14,4 +14,9 @@ fetch("http://128.199.176.124/flask").then(function(response) {
 }
 
 function getNews() {
-fetch("http://128.199.176.124/news").then(function(response) {
+fetch("http://128.199.176.124/news")
+.then(function(response) {return response.text(); })
+.then(function(response) {
+	document.getElementById('main-body').innerHTML = response;
+});
+}
