@@ -1,7 +1,9 @@
 import feedparser
 from flask import Flask, render_template
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)
 
 BBC_FEED = "http://feeds.bbci.co.uk/news/rss.xml"
 
