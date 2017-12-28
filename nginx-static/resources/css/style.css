@@ -37,6 +37,7 @@ nav {
     font-size: 20px;
     padding: 18px;
     transition: all 0.5s;
+    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
 }
 
 .nav-button span {
