@@ -21,7 +21,6 @@ nav {
 
 .nav-button-group {
     padding: 0px 0px;
-    border-radius: 8px;
     width: 100%;
     display: block;
 }
@@ -30,6 +29,39 @@ nav {
     width: 100%;
     margin: 0px 0px 5px 0px;
     cursor: pointer;
+    border-radius: 4px;
+    background-color: #2d3d56;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 18px;
+    transition: all 0.5s;
+}
+
+.nav-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.nav-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.nav-button:hover span {
+  padding-right: 25px;
+}
+
+.nav-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .main-body-container {
