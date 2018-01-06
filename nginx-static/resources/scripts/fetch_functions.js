@@ -23,5 +23,5 @@ fetch("http://128.199.176.124/news")
 
 
 function getShinyApp() {
-document.getElementById('main-body').innerHTML = '<iframe src="http://128.199.176.124/shiny_app"></iframe>';
+document.getElementById('main-body').innerHTML = '<iframe src="http://128.199.176.124/shiny_app" width="100%" height="450" frameborder="0"></iframe>';
 }
