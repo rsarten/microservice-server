@@ -20,3 +20,8 @@ fetch("http://128.199.176.124/news")
 	document.getElementById('main-body').innerHTML = response;
 });
 }
+
+
+function getShinyApp() {
+document.getElementById('main-body').innerHTML = '<iframe src="http://128.199.176.124/shiny_app"></iframe>';
+}

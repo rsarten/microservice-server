@@ -18,3 +18,7 @@ services:
         build: flask-news
         ports:
         - "5001:80"
+    shiny-test:
+        build: shiny-test
+        ports:
+        - "3838:3838"
