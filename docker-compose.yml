@@ -16,9 +16,11 @@ services:
         - "5000:80"
     flask-news:
         build: flask-news
+        restart: always
         ports:
         - "5001:80"
     shiny-test:
         build: shiny-test
+        restart: always
         ports:
         - "3838:3838"
