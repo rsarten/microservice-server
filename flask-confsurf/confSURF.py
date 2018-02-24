@@ -26,5 +26,11 @@ def create_json_table(vars=None):
 	return jsonify(surf)
 
 
+@app.route('/confSURF/api/v1/metadata')
+def get_metadata():
+
+	return jsonify(Table().getMetadata())
+
+
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=80, debug=True)

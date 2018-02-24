@@ -2,8 +2,9 @@ import numpy as np
 import pandas as pd
 
 class Table(object):
-    def __init__(self, vars):
+    def __init__(self, vars=['Sex']):
         full_surf = pd.read_csv("data/census-2006-surf.csv")
+        self.all_variables = list(full_surf)
 
         self.variables = ['meshblock']
         for var in vars:
@@ -71,3 +72,7 @@ class Table(object):
 
     def getSURFAsDict(self):
         return self.surf.to_dict('records')
+
+
+    def getMetadata(self):
+        return self.all_variables
