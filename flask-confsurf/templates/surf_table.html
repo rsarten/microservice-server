@@ -1,0 +1,17 @@
+<h3>Confidentialised SURF Table:</h3>
+
+<table>
+<tr>
+{% for key, value in table[0].items() %}
+	<td>{{key}}</td>
+{% endfor %}
+</tr>
+
+{% for row in table %}
+<tr>
+	{% for key, value in row.items() %}
+		<td>{{value}}</td>
+	{% endfor %}
+</tr>
+{% endfor %}
+</table>
