@@ -40,9 +40,9 @@ class Table(object):
             number_of_cells = len(self.variables[1:-1])
             self.surf.loc[self.surf['count']/number_of_cells <= 2, 'count'] = -1
 
-        self.surf['count'].apply(self.randomRound)
-        self.surf['count'].apply(str)
-        self.surf.loc[self.surf['count'] == -1, 'count'] = "..C"
+        self.surf.loc[self.surf['count'] >= 0, 'count'] = self.surf['count'].apply(self.randomRound)
+        self.surf['count'] = self.surf['count'].apply(str)
+        self.surf.loc[self.surf['count'] == '-1', 'count'] = "..C"
 
 
     def checkPassRule1(self):
